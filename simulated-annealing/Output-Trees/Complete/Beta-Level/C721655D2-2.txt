@@ -1,0 +1,16 @@
+Depth: 2
+Cost: 7.40741
+Recursion Base: 2.72166
+Invalid Count: 0
+Starting Tree: Complete Tree
+Initial Temperature: 1
+Cooling Rate: 0.999
+Temperature Floor: 1e-18
+Time: 8 sec
+3,
+6,4,
+8,7,5,999999,
+4,7,8,999999,6,999999,
+-999999,5,4,999999,4,999999,7,8,
+-999999,999999,-999999,5,-999999,5,-999999,8,7,999999,
+-999999,999999,-999999,999999,-999999,999999,-999999,999999,
