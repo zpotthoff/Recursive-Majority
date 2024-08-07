@@ -117,42 +117,6 @@ void Tree::traversalToFile(std::ofstream& file) {
     delete node; // delete the last -99
 }
 
-// bool Tree::valid3MAJAlgo() {
-//     return privValid3MAJAlgo(this->root, {}); 
-// }
-
-// bool Tree::privValid3MAJAlgo(Node* curr, std::vector<int> path) {
-//     // can't have more than VARS variables in a path
-//     if (path.size() > VARS) 
-//         return false;
-
-//     if (curr->getVar() == -LEAF_VAL || curr->getVar() == LEAF_VAL) {
-//         //there's stuff below a leaf
-//         if (curr->getLeft() != nullptr || curr->getRight() != nullptr)
-//             return false;
-
-//         //check no repeats in path
-//         std::unordered_set<int> s;
-//         for (int i = 0; i < path.size(); i++) {
-//             if (s.find(path[i]) != s.end()) {
-//                 return false;
-//             }
-//             s.insert(path[i]); // else
-//         }
-
-//         //check majority has actually been computed
-//         if (curr->majIsComputed())
-//             return true;
-//         return false;
-//     }
-
-//     // we're still working our way down a path
-//     path.push_back(curr->getVar());
-
-//     return (privValid3MAJAlgo(curr->getLeft(), path) 
-//             && privValid3MAJAlgo(curr->getRight(), path));
-// }
-
 float Tree::getCost(std::string filename) {
     std::ifstream file(filename);
     float ret = privGetCost(file);
